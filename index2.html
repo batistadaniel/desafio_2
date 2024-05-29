@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 18px;
+            font-weight: 430;
+            font-family: "Roboto", sans-serif;  
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            gap: 30px;
+            background-color: aqua;
+        }
+        
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            background-color: azure;
+            border-radius: 20px;
+        }
+    
+        th, td {
+            padding: 8px;
+            width: 16.66%;
+        }
+        .titulo-tabela {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;           
+        }
+        @media (max-width: 1100px) {
+            body {
+                flex-direction: column;
+                align-items: center;
+            } 
+        }
+        
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    
+    <div class="relatorio relatorio-mensal">
+        <table>
+            <tr>
+                <th class="titulo-tabela" colspan="6">Relatório Mensal</th>
+            </tr>
+            <tr>
+                <th>Faturamento</th>
+                <th>Norte</th>
+                <th>Nordeste</th>
+                <th>Centro Oeste</th>
+                <th>Sudeste</th>
+                <th>Sul</th>
+            </tr>
+            <tr>
+                <td>R$ (em Mi)</td>
+                <td>2.5</td>
+                <td>3.8</td>
+                <td>2.2</td>
+                <td>8.0</td>
+                <td>4.1</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="relatorio relatorio-anual">
+        <table>
+            <tr>
+                <th class="titulo-tabela" colspan="6">Relatório Anual</th>
+            </tr>
+            <tr>
+                <th>Faturamento</th>
+                <th>Norte</th>
+                <th>Nordeste</th>
+                <th>Centro Oeste</th>
+                <th>Sudeste</th>
+                <th>Sul</th>
+            </tr>
+            <tr>
+                <td>R$ (em Mi)</td>
+                <td>30.0</td>
+                <td>45.6</td>
+                <td>26.4</td>
+                <td>96.0</td>
+                <td>49.2</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
